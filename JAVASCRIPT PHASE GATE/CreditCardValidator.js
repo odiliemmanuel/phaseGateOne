@@ -1,9 +1,9 @@
 const prompt = require('prompt-sync')();
 
 console.log("Hello, Kindly Enter Card details to verify");
-let name = prompt("Credit Card Number: ");
-
-
+let name = prompt("Credit Card Number: " );
+ 
+    let start = date.now;
 
    function checkValidLength(cardNumber){
     
