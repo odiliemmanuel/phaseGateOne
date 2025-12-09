@@ -15,8 +15,8 @@ correctAnswer = 0;
         let start = Date.now();
 
     while(countNumberAnswered != NUMBER_OF_QUESTIONS){
-      firstNumber = parseInt(Math.random(0, 10)* 11);
-       secondNumber = parseInt(Math.random (0, 10)* 11);
+      firstNumber = parseInt(Math.random(1, 10)* 10);
+       secondNumber = parseInt(Math.random (1, 10)* 10);
 
        const correctAnswer = firstNumber - secondNumber;
 
@@ -30,16 +30,16 @@ correctAnswer = 0;
             countNumberAnswered += 1;
 
         if(answer == correctAnswer) {
+            console.log("Correct");
             countCorrect += 1;
         }
 
         if(answer != correctAnswer) {
+            console.log("Wrong");
             countWrong += 1;
         }
 
-        if(countWrong == 2){
-            break;
-        }
+       
         
 
 

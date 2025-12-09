@@ -16,8 +16,8 @@ import java.util.Scanner;
 
         while(countNumberAnswered != NUMBER_OF_QUESTIONS){
 
-        int firstNumber = (int)(Math.random() * 10);
-        int secondNumber = (int)(Math.random() * 10);
+        int firstNumber = (int)(Math.random() * 11);
+        int secondNumber = (int)(Math.random() * 11);
 
          correctAnswer = firstNumber - secondNumber;
 
@@ -33,17 +33,19 @@ import java.util.Scanner;
             countNumberAnswered += 1;
 
      if(answer == correctAnswer){
+        System.out.println("Correct");
            countCorrect += 1;                    
             }
        
         if(answer != correctAnswer){
+            System.out.println("Wrong");
             countWrong += 1;
            
         }
           
            
             if(countWrong >= 2) {
-                break;
+               
             }
     }
 
