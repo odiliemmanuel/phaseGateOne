@@ -6,7 +6,63 @@ import java.util.Scanner;
             Scanner input2 = new Scanner(System.in);
             Scanner input3 = new Scanner(System.in);
 
-            System.out.println(" Flash Grocery Editing ");
+
+    
+
+String menu =("""
+FLASH GROCERY
+
+1. Add item
+
+2. Remove item
+
+3. Show all available items
+
+""");
+
+System.out.println(menu);
+String menuOption = input.nextLine();
+
+    switch(menuOption){
+        case "1": 
+            
+            int length = 0;
+            String condition = "no";
+            String answer = "";
+
+           System.out.println("Enter the length of the item you want to add");
+                length = input.nextInt();
+
+            String [] add = new String [length];
+         
+        
+           for(int count = 0; count < length; count ++){
+
+            System.out.println("Enter item");
+                add[count]  = input2.nextLine();
+
+             System.out.println(Arrays.toString(add));
+
+
+            }
+           
+       }
+       
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+           
             
             int length = 0;
             String condition = "no";

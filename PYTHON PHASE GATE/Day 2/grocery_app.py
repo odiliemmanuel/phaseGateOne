@@ -2,7 +2,7 @@ from grocery_app_function import remove_items, add_items, show_all_items
 
 def main_menu(my_list):
 
-    menuApp = ("""
+    menu_app = ("""
 
     GROCERY LIST
     
@@ -11,10 +11,10 @@ def main_menu(my_list):
     3. Show all available items
     """)
     
-    print(menuApp)
-    menuOption = input("Enter any option ")
+    print(menu_app)
+    menu_option = input("Enter any option ")
 
-    match(menuOption):
+    match(menu_option):
         case "1": 
                 add = input("Enter item to add ")
                 add_items(my_list, item)
